@@ -1,16 +1,25 @@
-### Hi there 👋
+public class FibonacciSequence {
+    int CurrentNum;
+    int Previousnum;
+    int Sum;
 
-<!--
-**Dorukante/Dorukante** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    public void Run() {
+        Previousnum = 1;
+        CurrentNum = 1;
+        for(int i = 0; i < 100; i++) {
+            Sum = Previousnum + CurrentNum;
+            Previousnum = CurrentNum;
+            CurrentNum = Sum;
+        }
+        System.out.println(Sum);
+        }
+    
+    public static void main(String[] args) {
+        FibonacciSequence runner = new FibonacciSequence();
+        runner.Run();
+    }
 
-Here are some ideas to get you started:
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+
